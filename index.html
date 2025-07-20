@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Status Toggle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form action="insert.php" method="post">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="number" name="age" placeholder="Age" min="0" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="data-container"></div>
+
+  <script>
+    function fetchData() {
+      fetch('fetch.php')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('data-container').innerHTML = data;
+        });
+    }
+
+    function toggleStatus(id) {
+      fetch('update.php?id=' + id)
+        .then(() => fetchData());
+    }
+
+    fetchData();
+    setInterval(fetchData, 3000);
+  </script>
+</body>
+</html>
