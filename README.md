@@ -2,7 +2,6 @@
 
 [![Made with PHP](https://img.shields.io/badge/Made%20with-PHP-8892BF?style=for-the-badge&logo=php&logoColor=white)](#)
 [![MySQL](https://img.shields.io/badge/Database-MySQL-blue?style=for-the-badge&logo=mysql&logoColor=white)](#)
-[![Status](https://img.shields.io/badge/Live-Demo-available-success?style=for-the-badge)](#) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](./LICENSE)
 
 > A clean and lightweight PHP + MySQL web app that lets you add users and toggle their active/inactive status instantly.
